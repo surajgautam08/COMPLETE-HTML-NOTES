@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf4ff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #std {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.2);
+            width: 700px;
+        }
+
+        thead {
+            background-color: #1565c0;
+            color: white;
+        }
+
+        thead th {
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 16px;
+            text-transform: capitalize;
+            border: 1px solid #0d47a1;
+        }
+
+        thead th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        thead th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th {
+            background: #0066cc;
+            color: white;
+            padding: 14px;
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #cce4ff;
+            color: #333;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f0f8ff;
+        }
+
+        tbody tr:hover {
+            background: #d9edff;
+        }
+
+        td:last-child {
+            color: #008000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="std">
+        <h1>students marksheet</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>english</th>
+                    <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>suraj</td>
+                    <td>70</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dev</td>
+                    <td>100</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ravi</td>
+                    <td>70</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td colspan="2">THank</td>
+                    <td colspan="2">You</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

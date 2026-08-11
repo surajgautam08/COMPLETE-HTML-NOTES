@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        form {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #1d4ed8;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        form>div>div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            color: #1e3a8a;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 11px;
+            border: 2px solid #bfdbfe;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        h4 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #2563eb;
+            margin-right: 5px;
+        }
+
+        input[type="radio"]+label {
+            margin-right: 15px;
+            font-weight: normal;
+            color: #374151;
+        }
+
+        input[type="checkbox"]+label {
+            font-weight: normal;
+            color: #374151;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form>
+        <div>
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name ">
+            </div><br>
+            <div>
+                <label for="phone">Phone:</label>
+                <input id="phone" type="tel" placeholder="Enter your number">
+            </div><br>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div><br>
+            <div>
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" placeholder="Enter your password">
+            </div><br>
+            <div>
+                <label for="date">Date:</label>
+                <input id="date" type="date" placeholder="hjjhj">
+            </div><br>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="select" disabled selected>select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+
+                </select>
+            </div><br>
+            <div>
+                <h4>Exp</h4>
+                <input id="fresher" type="radio" name="exp">
+                <label for="fresher">Fresher</label>
+
+                <input id="2exp" type="radio" name="exp">
+                <label for="2exp">2y Exp</label>
+
+                <input id="3exp" type="radio" name="exp">
+                <label for="3exp">3y Exp</label>
+            </div><br>
+            <div>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">T&C</label>
+            </div>
+
+            <div>
+                <label for="description">Description:</label>
+                <textarea rows="4" id="description" placeholder="Write your message "></textarea>
+            </div><br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
