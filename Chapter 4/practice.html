@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f4c75, #3282b8, #bbe1fa);
+            min-height: 100vh;
+            padding: 40px 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 35px;
+            text-shadow: 2px 2px 5px #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        form>div {
+            width: 100%;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            color: #0f4c75;
+            margin-bottom: 7px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            border-radius: 7px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3282b8;
+            box-shadow: 0 0 6px rgba(50, 130, 184, 0.5);
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        h4 {
+            color: #0f4c75;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Radio buttons */
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]+label {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        /* Checkbox */
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]+label {
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #0f4c75;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #3282b8;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            form {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rolex Travel Agency</h1>
+    <form>
+        <div>
+            <div>
+                <label for="name">Traveler Name:</label>
+                <input id="name" type="name" placeholder="Enter your name">
+
+            </div><br>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div><br>
+            <div>
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" placeholder="Enter your pass">
+            </div><br>
+            <div>
+                <label for="contact">Phone no:</label>
+                <input id="contact" type="tel" placeholder="Enter youe number">
+            </div><br>
+            <div>
+                <label for="date">Date:</label>
+                <input id="date" type="date" placeholder="find">
+            </div><br>
+            <div>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="select">None</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="choose">Choose</option>
+                    <option value="china">China</option>
+                    <option value="india">India</option>
+                    <option value="berlin">Berlin</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="place">Place:</label>
+                <input id="place" type="place" placeholder="Enter place">
+            </div><br>
+            <div>
+                <label for="code">ZipCode:</label>
+                <input id="code" type="code" placeholder="Enter zip code">
+            </div><br>
+            <h4>Pass</h4>
+            <div>
+
+                <input id="vip" type="radio" name="vip">
+                <label for="vip">Vip</label>
+                <input id="normal" type="radio" name="vip">
+                <label for="normal">Normal</label>
+            </div><br>
+            <div>
+                <label for="desc">Descrition</label>
+                <textarea name="4" id="desc" placeholder="Enter your opinion"></textarea>
+            </div><br>
+            <div>
+                <input id="term" type="checkbox" required>
+                <label for="term">Term & Condition</label>
+            </div><br>
+            <div>
+                <button>Submit form</button>
+            </div>
+
+
+        </div>
+
+    </form>
+</body>
+
+</html>

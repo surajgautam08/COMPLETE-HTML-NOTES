@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Table </title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e8f5e9;
+        padding: 50px 20px;
+    }
+
+    #cricket {
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #1b5e20;
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    th {
+        background-color: #1b5e20;
+        color: white;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    td {
+        padding: 14px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+        background-color: #c8e6c9;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+    /* Last row */
+    tbody tr:last-child {
+        background-color: #1b5e20;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    @media (max-width: 600px) {
+        #cricket {
+            width: 100%;
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 27px;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            font-size: 12px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="cricket">
+        <h1>Cricket Score</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Runs</th>
+                    <th>Six</th>
+                    <th>Four</th>
+                    <th>One</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Virat</td>
+                    <td>9000</td>
+                    <td>8000</td>
+                    <td>6000</td>
+                    <td>500</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rohit</td>
+                    <td>7000</td>
+                    <td>6000</td>
+                    <td>500</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hardik</td>
+                    <td>900</td>
+                    <td>800</td>
+                    <td>700</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gill</td>
+                    <td>30</td>
+                    <td>80</td>
+                    <td>600</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dhoni</td>
+                    <td>90</td>
+                    <td>8000</td>
+                    <td>60</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Thanks</td>
+                    <td colspan="3">You</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

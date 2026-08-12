@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Online Food Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/zomato.jpg" alt="Zomato">
+        </div>
+
+        <ul>
+            <li><a href="#">Investor Relation</a></li>
+            <li><a href="#">Add Restaurant</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Background image -->
+        <img src="img/bg.jpg" alt="Food Background">
+
+        <p>Discover the best food and restaurants near you.</p>
+
+        <input id="searchInput" type="text" placeholder="Search for restaurant, cuisine or dish">
+
+        <!-- Food Cards Section -->
+        <section class="food-section">
+            <h2>Popular Food</h2>
+
+            <div class="slider-container">
+                <button id="prevBtn" class="slider-btn">&#10094;</button>
+
+                <div class="food-slider">
+
+                    <div class="food-card">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Pizza">
+                        <h3>Pizza</h3>
+                        <p>Delicious cheesy pizza</p>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Burger">
+                        <h3>Burger</h3>
+                        <p>Fresh and tasty burgers</p>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Biryani">
+                        <h3>Biryani</h3>
+                        <p>Authentic Indian Biryani</p>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Pasta">
+                        <h3>Pasta</h3>
+                        <p>Italian style creamy pasta</p>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Cake">
+                        <h3>Cake</h3>
+                        <p>Sweet and delicious desserts</p>
+                    </div>
+
+                </div>
+
+                <button id="nextBtn" class="slider-btn">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 | All rights reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

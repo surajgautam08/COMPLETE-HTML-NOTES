@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 130px;
+    display: block;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #e23744;
+}
+
+/* Main */
+main {
+    position: relative;
+    padding: 60px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+main > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    z-index: -2;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+main > p {
+    color: white;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    animation: slideDown 1s ease;
+}
+
+main > input {
+    width: min(650px, 90%);
+    padding: 18px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    animation: zoomIn 1s ease;
+}
+
+/* Food Section */
+.food-section {
+    max-width: 1200px;
+    margin: 100px auto 30px;
+}
+
+.food-section h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.food-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 5px;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.food-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cards */
+.food-card {
+    min-width: 240px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    animation: cardAppear 0.8s ease both;
+}
+
+.food-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(226, 55, 68, 0.25);
+}
+
+.food-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 15px 15px 5px;
+    color: #e23744;
+}
+
+.food-card p {
+    padding: 0 15px 20px;
+    color: #666;
+}
+
+/* Slider Buttons */
+.slider-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e23744;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    transform: scale(1.15);
+    background-color: #c91f32;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main > p {
+        font-size: 22px;
+        margin-top: 80px;
+    }
+
+    .food-card {
+        min-width: 220px;
+    }
+
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+}
