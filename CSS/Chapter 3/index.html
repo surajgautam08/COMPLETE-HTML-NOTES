@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        /* it is class selecter */
+        .small {
+            background-color: red;
+            color: rgb(197, 239, 9);
+        }
+
+        /* id selecter */
+        #p {
+            color: rgb(142, 239, 5);
+            background-color: red;
+            width: 30%;
+        }
+
+        /* class selecter */
+        .bid {
+            background-color: red;
+        }
+
+        /* universal selecter */
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        /* pseudo selecter */
+        a:visited {
+            color: rgb(211, 245, 15);
+
+        }
+        a:link{
+            background-color: blue;
+        }
+        a:hover{
+            background-color: green;
+            border: 2px solid red;
+            border-style:inset;
+        }
+        .btn button{
+            color: rgb(244, 241, 241);
+            background-color: blue;
+            padding: 5px;
+            
+        }
+        .btn button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .btn button:visited{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="small">
+        It is small
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+
+    </div>
+    <p id="p">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <div class="bid">
+        It is bid
+    </div>
+    <a href="https://www.google.com" target="_blank">google</a>
+    <div class="btn">
+        <button>Click Here</button>
+    </div>
+</body>
+
+</html>
