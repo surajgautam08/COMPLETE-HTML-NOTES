@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: yellowgreen;
+}
+
+.box1 {
+    color: green;
+    border: 2px solid rgb(245, 6, 6);
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    /* padding-bottom: 50px; */
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    color: green;
+    border: 2px solid rgb(245, 6, 6);
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    /* padding-bottom: 50px; */
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+
+}
