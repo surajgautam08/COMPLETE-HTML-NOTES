@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* margin: 20px 10px 20px 13px; - top right bottom left */
+            /* margin: 10px 20px; top-bottom and right-left */
+            /* background-color: red; */
+            border: 2px solid black;
+            font-size: 15px;
+            width: 80vw;
+
+            margin: auto;
+
+            /* width: 250px; */
+            /* vw - view width */
+
+            /* height: 250px; */
+            /* vh-view height*/
+            /* box-sizing: border-box; */
+            /* margin: auto; */
+        }
+
+        .one {
+            background-color: rgb(19, 213, 2);
+            height: 10vh;
+            margin: 10px auto;
+
+
+        }
+
+        .two {
+            background-color: red;
+
+            height: 80vh;
+            margin: 10px auto;
+            /* font-size: 2em; */
+
+        } 
+
+        .one p {
+            font-size: 3rem;
+        }
+
+        .two p {
+
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one box">
+        This is first
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="two box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo cum accusamus ab culpa aut. Fugiat
+            blanditiis, perferendis sunt repellat praesentium quas excepturi voluptatem rerum voluptas, vero
+            reprehenderit odio sed quaerat explicabo asperiores recusandae dignissimos officiis id neque vel, aliquam
+            eligendi eaque maxime? Dolore maxime, odio harum eos ut voluptatum.</p>
+    </div>
+
+</body>
+
+</html>
