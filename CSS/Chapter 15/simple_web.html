@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: aqua;
+
+        }
+
+        .ait {
+            background-color: aqua;
+        }
+
+        .about {
+            background-color: rgb(145, 240, 240);
+        }
+
+        .nav span img {
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 40px;
+
+
+        }
+
+        span {
+            padding-left: 5px;
+            margin-top: 5px;
+        }
+
+        .nav ul li {
+            /* display: flex;   */
+            padding: 10px;
+            margin: 5px;
+            padding-left: 100px;
+            /* margin: 10px; */
+
+        }
+
+        .nav {
+            display: flex;
+
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .ait {
+            /* margin: 90px ; */
+            /* margin-top: 60px; */
+            padding-top: 60px;
+            width: 100vw;
+            text-align: center;
+
+        }
+
+        .ait p {
+            color: rgb(86, 83, 83);
+        }
+
+        .ait input {
+            border: 2px solid black;
+            background-color: aquamarine;
+            border-radius: 15px;
+            width: 250px;
+            margin: 20px;
+            padding: 10px;
+            box-shadow: 0px 8px 20px 0px black;
+        }
+
+        .about {
+            width: 100vw;
+            height: 56vh;
+            padding: 22px 60px;
+        }
+
+        .sec1 {
+            display: flex;
+
+        }
+
+        .sec1 span {
+            /* width: 50%; */
+
+        }
+
+        .sec1 span:first-child {
+            width: 80%;
+            font-size: 15px;
+        }
+
+        /* .sec2 span:last-child{
+            
+        } */
+        .sec1 span button {
+            margin: 17px 50px auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(159, 229, 222);
+            box-shadow: 0px 8px 20px 0px black;
+        }
+
+        .sec2 {
+            display: flex;
+        }
+
+        .sec2 img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .para {
+            color: rgb(4, 60, 60);
+            padding-left: 20px;
+        }
+
+        .sec2 {
+            width: 80vw;
+            margin: 70px auto ;
+            padding: 20px;
+            background-color: rgb(133, 201, 178);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <span><img src="logo.svg" alt="Suraj"></span>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="ait">
+            <h1>Ready to Build Something New</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <input type="text" placeholder="Enter Here">
+        </div>
+        <div class="about">
+            <div class="sec1">
+                <span>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptate.</p>
+                </span>
+                <span>
+                    <button>Search</button>
+                </span>
+            </div>
+            <div class="sec2">
+                <img src="logo.svg" alt="Image">
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium natus autem sequi mollitia
+                        fuga quos.</p><br>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
