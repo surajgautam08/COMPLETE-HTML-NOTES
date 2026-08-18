@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selector in css</title>
+    <style>
+        /* .boxes *{
+            border: 2px solid black;
+        } */
+        /* box::first-line{
+            color: red;
+         } */
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* p , a ,.box,[data-color=primary]{
+            padding-top: 15px;
+        } */
+        /* .box:nth-child(odd){
+            color: red;
+         } */
+        /* .box:nth-child(2){
+            background-color: blue;
+        } */
+        /* .boxes::before{
+            content: "Rolex";
+            color: red;
+            
+        }
+        /* .boxes::after{
+            content:" Byy Rolex";
+            color: blue;
+        } */
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hello World!</div>
+        <input type="text" placeholder="Enter the name ">
+        <div class="box">Hello World!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto exercitationem voluptate
+         vero aut quidem.!</div>
+    </div>
+</body>
+
+</html>
