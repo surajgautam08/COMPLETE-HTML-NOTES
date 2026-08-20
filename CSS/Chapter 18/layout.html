@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Layout</title>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: rgba(77, 30, 230, 0.703);
+        }
+
+        header {
+            background-color: tomato;
+            width: 100vw;
+            height: 10vh;
+            border: 2px solid black;
+        }
+
+        .boxes {
+            /* background-color: rgb(13, 241, 108); */
+            width: 100vw;
+            height: 80vh;
+            margin: auto;
+            display: flex;
+        }
+
+        .box {
+            background-color: brown;
+            width: 540px;
+            height: 440px;
+            margin: auto;
+
+        }
+
+        .box {
+            border: 2px solid black;
+        }
+
+        .rec {
+            background-color: tomato;
+            width: 70vw;
+            height: 15vh;
+            border-radius: 100px;
+            /* margin-top: -155px; */
+            padding-top: 0px;
+            margin: 10px auto;
+
+        }
+
+        h1 {
+            color: aquamarine;
+            font-size: 25px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: tomato;
+            width: 100vw;
+            height: 10vh;
+            position: relative;
+            bottom: 0px;
+        }
+        .up{
+            position:fixed;
+            z-index: 1;
+            bottom: 20px;
+            right: 20px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 50% ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box one"></div>
+            <div class="box two"></div>
+        </div>
+        <div class="rec">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+    </main>
+       <a class="up">
+        <span><ion-icon name="arrow-up-outline"></ion-icon>
+        </span>
+       </a>
+    <footer>
+        
+    </footer>
+    
+</body>
+
+</html>
