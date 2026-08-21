@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise image flexbox</title>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header{
+
+            background-color: rgb(41, 41, 41);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 10px 20px;
+            margin: 0px 60px;
+
+        }
+
+        .logo {
+            color: white;
+            font-size: 35px;
+        }
+
+        .logo span {
+            color: rgba(133, 133, 241, 0.828);
+        }
+
+        .navlinks ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .heropage{
+            background-image: url('nightimg.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            width: 80vw;
+            /* background-color: aqua; */
+            border: 2px solid black;
+            display: flex;
+            flex-direction:column;
+            justify-content:flex-end;
+            margin: 0px auto;
+        }
+        .heropage p{
+            z-index: 10000;
+            color: white;
+            background-color: rgba(231, 10, 10, 0.584);
+            /* position: relative; */
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo">
+                <h1>Rol<span>ex</span></h1>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#"><ion-icon name="home-outline"></ion-icon>
+                            Home</a></li>
+                    <li><a href="#"><ion-icon name="person-outline"></ion-icon>About</a></li>
+                    <li><a href="#"><ion-icon name="cog-outline"></ion-icon>Services</a></li>
+                    <li><a href="#"><ion-icon name="bag-outline"></ion-icon>Portfolio</a></li>
+                    <li><a href="#"><ion-icon name="pencil-outline"></ion-icon>Blog</a></li>
+                    <li><a href="#"><ion-icon name="mail-outline"></ion-icon>Contact</a></li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="heropage">
+            <!-- <img src="nightimg.avif" alt="Nightmare"> -->
+             <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
