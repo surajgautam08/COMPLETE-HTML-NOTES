@@ -12,15 +12,17 @@
             margin: 0;
             padding: 0;
         }
-        header{
+
+        header {
 
             background-color: rgb(41, 41, 41);
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
             padding: 10px 20px;
             margin: 0px 60px;
 
@@ -50,7 +52,8 @@
             /* justify-content: center; */
             align-items: center;
         }
-        .heropage{
+        /* heropage css */
+        .heropage {
             background-image: url('nightimg.avif');
             background-repeat: no-repeat;
             background-size: cover;
@@ -59,18 +62,230 @@
             /* background-color: aqua; */
             border: 2px solid black;
             display: flex;
-            flex-direction:column;
-            justify-content:flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
             margin: 0px auto;
         }
-        .heropage p{
+
+        .heropage p {
             z-index: 10000;
             color: white;
             background-color: rgba(231, 10, 10, 0.584);
             /* position: relative; */
-            
+
         }
         
+        /* about page css */
+        .about-bg {
+            background-color: #ededed;
+            margin-top: 40px;
+        }
+
+        .about-us {
+            background-color: #ededed;
+            width: 80vw;
+            height: 45vh;
+            margin: 0px auto;
+            display: flex;
+        }
+
+        .sec1 {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d90ed;
+            font-size: 30px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .sec2 {
+            width: 60%;
+            display: flex;
+            margin: 25px;
+        }
+
+        .sec2 img {
+            border-radius: 20px 70px;
+        }
+
+        .img h3 {
+            font-weight: 100px;
+            font-size: 25px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .para {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 200px;
+            margin: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .para p {
+            margin: 10px 5px;
+        }
+
+        /* our team css code  */
+        .our_team_bg {
+            background-color: #ededed;
+            margin-top: 40px;
+        }
+
+        .our-team {
+            background-color: #ededed;
+            width: 80vw;
+            height: 40vh;
+            margin: 0px auto;
+            display: flex;
+        }
+
+        .sec3 {
+            width: 60%;
+            display: flex;
+            margin: 25px;
+        }
+
+        .sec3 ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .sec3 ul li {
+            margin: 0px 15px;
+        }
+
+        .sec3 ul li h3 {
+            text-align: center;
+            font-weight: 100px;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .sec3 ul li img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .sec4 {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d90ed;
+            font-size: 30px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* footer css  */
+        footer {
+            background-color: #ededed;
+            margin-top: 40px;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+        }
+
+        footer h2 {
+            margin: auto;
+        }
+
+        /* contaact css code  */
+        .contact-bg {
+            background-color: #ededed;
+            margin-top: 40px;
+            padding: 40px 0;
+        }
+
+        .contact-us {
+            background-color: #ffffff;
+            width: 80vw;
+            min-height: 45vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .form {
+            width: 70%;
+            padding: 25px;
+        }
+
+        .form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .input-box input,
+        .input-box textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .input-box textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        .input-box input:focus,
+        .input-box textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .contact-us {
+                width: 90vw;
+            }
+
+            .form {
+                width: 90%;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -97,12 +312,104 @@
         </nav>
     </header>
     <main>
+        <!-- this is heropage  -->
         <div class="heropage">
             <!-- <img src="nightimg.avif" alt="Nightmare"> -->
-             <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
+         <!-- this about page  -->
+        <div class="about-bg">
+            <div class="about-us">
+                <div class="sec1">
+                    <h1>
+                        ABOUT US
+                    </h1>
+                </div>
+                <div class="sec2">
+                    <div class="img">
+                        <img width="150" src="suraj.jpeg" alt="suraj">
+                        <h3>Rolex</h3>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit molestias eligendi
+                            facilis alias minus? Temporibus officiis facere quos voluptatum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit molestias eligendi
+                            facilis alias minus? Temporibus officiis facere quos voluptatum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit molestias eligendi
+                            facilis alias minus? Temporibus officiis facere quos voluptatum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- this is our team code  -->
+        <div class="our_team_bg">
+            <div class="our-team">
+                <div class="sec3">
+                    <ul>
+                        <li>
+                            <img src="image1.png" alt="image">
+                            <h3>Member 1</h3>
+                        </li>
+                        <li>
+                            <img src="image1.png" alt="image">
+                            <h3>Member 2</h3>
+                        </li>
+                        <li>
+                            <img src="image1.png" alt="image">
+                            <h3>Member 3</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec4">
+                    <h1>
+                        OUR TEAM
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+            <!-- this is contact code -->
+        <section class="contact-bg">
+            <div class="contact-us">
+
+                <div class="form">
+                    <form action="#">
+
+                        <h2>Contact Us</h2>
+
+                        <div class="input-box">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <h2>
+            MADE BY ROLEX .
+        </h2>
+    </footer>
 </body>
 
 </html>
